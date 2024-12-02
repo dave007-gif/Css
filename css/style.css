@@ -5,32 +5,34 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.block {
-    width: 30vw;
-    height: 30vw;
+.columns {
+    column-count: 4;
+    column-width: 250px;
+    column-rule: 3px solid black;
+    column-gap: 3rem;
+}
+
+.columns p {
+    margin-top: 0;
+}
+
+.columns h2 {
+    margin-top: 0;
     background-color: black;
-    color: aliceblue;
+    color: antiquewhite;
     padding: 1rem;
-
+    break-inside: avoid;
+   
 }
 
-.left {
-    float: left;
-    margin-right: 1rem;
+.columns .quote {
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    column-span: all;
 }
 
-.right {
-    float: right;
-    margin-left: 1rem;
-}
-
-.clear {
-    clear: both;
-}
-
-section {
-    background-color: antiquewhite;
-    border: 1px solid black;
-    padding: 1rem;
-    display: flow-root;
+.nowrap {
+    white-space: nowrap;
 }
